@@ -3,81 +3,223 @@
     <head>
         <title>Fall Fast Fun - Online Ski Shop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
     <body class="landing">
-        <header class="top-header">
-<!--            <div class="search-bar">-->
-                <form class="search-bar">
-                    <input type="text" name="search" placeholder="Search..">
-                </form>
-                
-<!--            </div>-->
-            <div class="promot">
-                FREE SHIPPING
-            </div>
-            <div class="header-right"></div>
+        <header class="container">
+            <div class="row top-header">
+                <div class="one-third column search-bar">
+                    <input type="text" name="search" placeholder="">
+                </div>
+                <div class="one-third column promot">
+                    <span class="primary"><b>FREE SHIPPING</b></span><span class="secondary">order over $50</span>
+                </div>
+                <ul class="one-third column actions">
+                    <li class="chat">
+<!--                        <i class="fa fa-comments-o fa-lg"></i> -->
+                        <a>Chat</a>
+                    </li>
+                    <li class="support">
+                        <a src="index.html">Support</a>
+                    </li>
+                    <li class="account">
+                        <a src="index.html">
+                            Sign In
+<!--                            <i class="fa fa-user-circle-o fa-lg"></i> -->
+                        </a>
+                    </li>
+                    <li class="shop-cart">
+<!--                        <a>-->
+                            &nbsp;
+<!--                            <img src="assets/images/shop_cart.png">-->
+<!--                        </a>-->
 <!--
-            <section class="upper">
-            </section>
--->     
-        </header>
-        <main>
-            <nav class="nav-bar">
-                <a herf="index.html" class="f3-logo">
-                    <img src="assets/images/F3_Logo.png" alt="fall-fast-fun logo">
-                </a>
-                <div class="shop-menu">
+                        <a src="" class="icon-cart">
+                        
+                        </a>
+-->
+<!--                        <i class="fa fa-shopping-cart fa-lg"></i>-->
+                    </li>
+                </ul>
+            </div>
+            
+            <nav class="row nav-bar">
+                <div class="one-third column">
+                    <a herf="index.html" class="f3-logo">
+                        <img src="assets/images/F3_Logo.png" alt="fall-fast-fun logo">
+                    </a>
+                </div>
+                <div class="one-third column shop-menu">
                     <a href="product_selection.html" class="link">MEN</a>
                     <a href="product_selection.html" class="link">WOMEN</a>
                     <a href="product_selection.html" class="link">KIDS</a>
                     <a href="product_selection.html" class="link">SALES</a>
                 </div>
-                <div class="guide-tutorial">
+                <div class="one-third column guide-tutorial">
                     <a href="academy.html" class="lower-link">BUYING GUIDE</a>
                     <a href="academy.html" class="lower-link">TUTORIALS</a>
                 </div>
+             
             </nav>
+        </header>
+        <main>
             <section class="shop ski">
-                <img src="assets/images/" alt="hero-for-ski">
-                <div class="btn">SHOP SKIS</div>
-                <a>SPECIAL BUNDLES</a>
-                <a>SKIS</a>
-                <a>BINDINGS</a>
-                <a>BOOTS</a>
-                <a>POLES</a>
-                <a>ACCESSORIES</a>
+                <div class="hero-container">
+                    <img src="assets/images/ski_hero.png" alt="hero-for-ski" class="hero-img">
+                    <div class="button button-primary">SHOP SKIS</div>
+                </div>
+                <div class="container row selections"> <!--class="row" don't really necessary needed as it won't make a different-->
+                    <a class="columns">SPECIAL BUNDLES</a>
+                    <a class="columns">SKIS</a>
+                    <a class="columns">BINDINGS</a>
+                    <a class="columns">BOOTS</a>
+                    <a class="columns">POLES</a>
+                    <a class="columns">ACCESSORIES</a>
+                </div>
+                
             </section>
             <section class="shop snowboard">
-                <div class="btn">SHOP SNOWBOARDS</div>
-                <a>SPECIAL BUNDLES</a>
-                <a>SNOWBOARDS</a>
-                <a>BINDINGS</a>
-                <a>BOOTS</a>
-                <a>ACCESSORIES</a>
+                <div class="hero-container">
+                    <img src="assets/images/snowboard_hero.png" alt="hero-for-snowboard" class="hero-img">
+                    <div class="button button-primary">SHOP SNOWBOARDS</div>
+                </div>
+                <div class="container row selections">
+                    <a class="columns">SPECIAL BUNDLES</a>
+                    <a class="columns">SNOWBOARDS</a>
+                    <a class="columns">BINDINGS</a>
+                    <a class="columns">BOOTS</a>
+                    <a class="columns">ACCESSORIES</a>
+                </div>
             </section>
             <section class="academy">
-                <h1>Join our F3 Academy: Buy and Learn!</h1>
-                <div class="buying-guide">
-                    <h3>All Levels Buying Guides</h3>
-                    <img src="" alt="">
-                    <h5>How to select ski boots?</h5>
-                </div>
-                <div class="videos">
-                    <h3>Popular Training Videos</h3>
-                    <div class="tutorial-clip">
-                        <img src="">
-                        <h4 class="tutorial-title">Basic Skiing Stance</h4>
-                        <h6 class="tutorial-author">Ski School, Elate Media</h6>
-                        <scan class="tutorial-tag">Beginner</scan>
+                <h1 class="section-title">Join our F3 Academy: Buy and Learn!</h1>
+                <div class="content-container">
+                    <div class="container row">
+                        <div class="one-half column buy-guide-container">
+                            <h4 class="sub-sec-title">All Levels Buying Guides</h4>
+                            <div class="img-container">
+                                <img src="assets/images/ski_boots_sel.png" alt="how to select ski boots" class="buy-guide-img">
+                            </div>
+                            <h6 class="cap-title">How to select ski boots?</h6>
+                            <span class="list-action">See All</span>
+                        </div>
+                        <div class="one-half column videos">
+                            <h4 class="sub-sec-title">Popular Training Videos</h4>
+                            <div class="tutorial-clip">
+                                <ul>
+                                    <li>
+<!--                                        <div>-->
+                                        <img src="assets/images/basic.png" alt="" class="part vid-thumbnail">
+<!--                                        </div>-->
+                                        <div class="part vid-info">
+                                            <h4 class="tutorial-title">Basic Skiing Stance</h4>
+                                            <h6 class="tutorial-author">Ski School, Elate Media</h6>
+                                            <div class="tag-sec">
+                                                <div class="button tutorial-tag">Beginner</div>
+                                                <div class="button tutorial-tag">Skiing</div>
+                                                <div class="button tutorial-tag">Elate Media</div>
+                                            </div>
+                                        </div>
+                                        <div class="part actions">
+                                            <img src="assets/images/play_icon.png" class="play-icon">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/dynamic_turn.png" alt="" class="part vid-thumbnail">
+                                        <div class="part vid-info">
+                                            <h4 class="tutorial-title">Dynamic Turns</h4>
+                                            <h6 class="tutorial-author">Ski School, Elate Media</h6>
+                                            <div class="tag-sec">
+                                                <div class="button tutorial-tag">Intermediate</div>
+                                                <div class="button tutorial-tag">Skiing</div>
+                                                <div class="button tutorial-tag">Elate Media</div>
+                                            </div>
+                                        </div>
+                                        <div class="part actions">
+                                            <img src="assets/images/play_icon.png" class="play-icon">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/pole_plan.png" alt="" class="part vid-thumbnail">
+                                        <div class="part vid-info">
+                                            <h4 class="tutorial-title">Dynamic Turns</h4>
+                                            <h6 class="tutorial-author">Ski School, Elate Media</h6>
+                                            <div class="tag-sec">
+                                                <div class="button tutorial-tag">Advanced</div>
+                                                <div class="button tutorial-tag">Skiing</div>
+                                                <div class="button tutorial-tag">Elate Media</div>
+                                            </div>
+                                        </div>
+                                        <div class="part actions">
+                                            <img src="assets/images/play_icon.png" class="play-icon">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/edge_pressure.png" alt="" class="part vid-thumbnail">
+                                        <div class="part vid-info">
+                                            <h4 class="tutorial-title">Dynamic Turns</h4>
+                                            <h6 class="tutorial-author">Ski School, Elate Media</h6>
+                                            <div class="tag-sec">
+                                                <div class="button tutorial-tag">Advanced</div>
+                                                <div class="button tutorial-tag">Skiing</div>
+                                                <div class="button tutorial-tag">Elate Media</div>
+                                            </div>
+                                        </div>
+                                        <div class="part actions">
+                                            <img src="assets/images/play_icon.png" class="play-icon">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="list-action">See All</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         
         <footer>
+            <div class="container">
+                <div class="row footer-info">
+                    <div class="one-half column sign-up-container">
+                        <span class="email-sign-up">SIGN UP FOR F3 SALE AND UPDATES</span>
+                        <input type="email" name="email-sign-up" placeholder="Enter your email address to sign up">
+                        <i class="fa fa-envelope-o fa-lg"></i>
+                    </div>
+                    <ul class="two columns about-us">
+                        <li>About us</li>
+                        <li>About F3</li>
+                        <li>Our Team</li>
+                        <li>Careers</li>
+                    </ul>
+                    <ul class="two columns cus-ser">
+                        <li>customer service</li>
+                        <li>Order Status</li>
+                        <li>Return items</li>
+                        <li>warranty</li>
+                        <li>Contact us</li>
+                    </ul>
+                    <ul class="two columns news">
+                        <li>news</li>
+                        <li>we are hiring!</li>
+                        <li>our investors</li>
+                    </ul>
+                </div>
+                <div class="row social">
+                    <span>&copy; 2016 Fall-Fast-Fun(F3) Design Group.</span>
+                    <ul>
+                        <li><i class="fa fa-facebook-official fa-lg"></i></li>
+                        <li><i class="fa fa-twitter fa-lg"></i></li>
+                        <li><i class="fa fa-instagram fa-lg"></i></li>
+                        <li><i class="fa fa-weixin fa-lg"></i></li>
+                        <li><i class="fa fa-weibo fa-lg"></i></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

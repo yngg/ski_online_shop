@@ -3,93 +3,431 @@
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
 }
-
-html {
-     height: 100%; /* makes sure our HTML takes up 100% of the browser window */
-     font-size: 100%;
- }
- 
- body {
-     font-family: 'Roboto', sans-serif;; /* sets our font to the "Open Sans" typeface */
-     color: black;             /* sets the text color to white */
-     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
- }
+body {
+    font-family: 'Roboto', sans-serif;; /* sets our font to the "Open Sans" typeface */
+    color: black;              /*sets the text color to white */
+    min-height: 100%;          /*says the height of the body must be, at minimum, 100% of the window */
+    color: #303030;  /*default color*/
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 a {
     text-decoration: none;
-    text-decoration-color: gray;
+/*    font-family: Roboto, sans-serif;*/
+    
 }
-header.top-header,
-{
-    width: 100%;
-    height: 45px;
-    position: relative;
-    /* Topper Background: */
-    background: #FFFFFF;
-    border-bottom: 1px solid #D8D8D8;
-
+.top-header {
+    border-bottom: 1px solid #d8d8d8;
 
 }
-main.nav-bar {
-    width: 100%;
-    height: 75px;
-    position: relative;
-    /* Topper Background: */
-    background: #FFFFFF;
+.top-header .search-bar,
+.top-header .promot,
+.top-header .actions {
+    margin: 0;
+    padding: 0;
+    line-height: 45px;
 }
 
-.top-header div,
-.nav-bar div {
-/*    min-height: 100px;*/
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-}
-.top-header .search-bar {
-    min-width: 30%;
-    min-height: 45px;
-    background: black;
-    display: inline-block;
-    margin-left: 40px;
-}
-.
 .search-bar input[type=text] {
-    width: 50%;
+    width: 200px;
     height: 30px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('../assets/images/Search_Icon.png');
-    background-position: 10px 10px; 
+    margin: 0 0 0 10px;
+    background-image: url(../assets/images/Search_Icon.png);
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    background-position: 10px center;
+    background-size: auto 75%;
+    transition: ease-in-out, width .5s ease-in-out;
 }
+
 .search-bar input[type=text]:focus {
-    width: 80%;
+    width: 300px;
+    background: none;
+}
+.top-header .actions {
+    float: right;
+/*      direction: rtl;*/
+/*
+        position: relative;
+    right: 0;
+*/
+}
+.actions a {
+    color: #303030;
+}   
+
+ul.actions li {
+    margin: 0 20px 0 0;
+/*    background-color: aqua;*/
+    display: inline-block;
+/*    float: left;*/
 }
 
-.top-header .promot {
-    min-width: 30%;
-/*    min-height: 100px;*/
-    background: white;
-/*    display: inline-block;*/
-    vertical-align: middle;
-    text-align: center;
+ul.actions li:first-of-type {
+    padding-left: 30px;
+    background-image: url(../assets/images/chat_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 17px;
 }
 
-.top-header .header-right {
-    min-width: 30%;
-/*    min-height: 100px;*/
-    background: black;
-/*    display: inline-block;*/
+ul.actions li:nth-child(3) {
+    padding-right: 30px;
+/*    background-color: aquamarine;*/
+    background-image: url(../assets/images/user_icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 25px;
+}
+
+ul.actions li:last-child {
+    padding-left: 30px;
+/*    background-color: blue;*/
+    background-image: url(../assets/images/shop_cart.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 25px;
+    margin: 0;
+}
+
+.promot span {
+    padding-left: 20px;
+}
+.nav-bar {
+    height: 75px;
+    min-height: 75px;
+}
+.nav-bar a {
+    color: #303030;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.nav-bar div:first-child {
+    position: relative;
+    top: 20px;
 }
 
 .f3-logo img {
     width: 176px;
-    height: auto;
+}
+
+
+.nav-bar .shop-menu,
+.nav-bar .guide-tutorial {
+    line-height: 75px;
+    position: relative
+}
+.nav-bar .shop-menu {
+    margin: 0;
+
+}
+/*
+.nav-bar .shop-menu:after {
+    content: "";
+    width: 2px;
+    height: 50%;
+    position: absolute; 
+    top: 20px; 
+    right: -20px; 
+    background-color: #979797;
+}
+*/
+.nav-bar .guide-tutorial:before {
+    content: "";
+    width: 2px;
+    height: 50%;
+    position: absolute; 
+    top: 20px; 
+    left: -45px; 
+    background-color: #979797;
+}
+.nav-bar .guide-tutorial {
+    float: right;
+}
+.shop-menu a {
+    margin-right: 20px;
+}
+
+.guide-tutorial a {
+    margin-right: 20px;
+}
+
+/*CSS for <main>*/
+.shop {
+    position: relative;
+    background-color: #F2F2F2;
+}
+.hero-container {
+    position: relative; /*need it as the button is positioned as absolute and it is relative to its first parent(s) which is positioned as relative. If we don't put relative in hero-container, button's absolute position will respect to .shop.ski section*/
+    max-width: 1080px;
+    max-height: 634px; /*Don't know why there is a small empty gap if don't specify the height*/
+    margin: 0 auto;
+}
+.hero-img {
+/*    display: block;img default is inline*/
+    width: 100%;
+/*    margin: 0 auto;*/
+}
+
+.shop .button {
+    position: absolute;
+    min-width: 200px;
+    border-radius: 0px;
+    border-color: #F28142;
+    background-color: #E86D27;
+} 
+.shop.ski .button {
+    bottom: 16%;
+    right: 8%;
+}
+
+.shop.snowboard .button {
+    top: 16%;
+    left: 8%;
+}
+
+.shop .selections {
+    line-height: 80px;
+    letter-spacing: -1px;
+/*    width: 85%;*/
+/*    margin: 0 auto;*/
+}
+
+.shop .selections a {
+    width: auto;
+/*    margin-top: 22px;*/
+/*    padding-right: 7vw;*/
+    margin-left: 0;
+    color: #464646;
+    font-size: 1.7rem; /*after normalize, 1rem == 10px*/
+/*    font-size: 1.6vw;*/
+}
+
+/*
+.shop.ski .selections a {
+    padding-right: 7vw;
+}
+.shop.snowboard .selections a {
+    padding-right: 7.9vw;
+}
+*/
+.shop.ski .selections a {
+    padding-right: 11%;
+}
+.shop.snowboard .selections a {
+    padding-right: 13%;
+}
+
+.shop .selections a:last-child {
+    padding-right: 0;
+}
+
+
+/*
+.selections a:not(:first-child) {
+    margin-left: 12%;
+}
+*/
+/*
+.selections a:nth-child(3) {
+    margin-left: 10%;
+}*/
+
+
+/* CSS for Academy */
+.academy .section-title {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.academy .content-container {
+    background-color: #F2F2F2;
+    padding-bottom: 60px;
+}
+
+.content-container .one-half {
+    margin: 0 auto;
+    margin-top: 40px;
+}
     
+
+.one-half .sub-sec-title{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: 1px; 
+}
+
+.one-half .cap-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 1px; 
+}
+
+.img-container {
+    position: relative;
+    margin-top: 40px;
+    min-height: 350px;
+}
+
+.content-container .buy-guide-container .buy-guide-img{
+    height: 100%;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.academy .one-half .list-action {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Training videos*/
+.tutorial-clip {
+    margin-top: 40px;
+}
+
+.tutorial-clip ul li {
+    height: 85px;
+    clear: both;
+    margin-top: 1rem;
+    border-bottom: 1.5px solid #979797;
+}
+
+.tutorial-clip .part {
+    float: left; 
+}
+.part.actions {
+    min-width: 20px;
+    height: 100%;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+.part.actions .play-icon {
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.vid-thumbnail {
+    width: 110px;
+    height: auto;
+}
+.vid-info {
+    margin-left: 20px;
+}
+.tutorial-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+.tutorial-author {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.tag-sec {
+    margin-top: 1rem;
+}
+.tutorial-tag {
+    padding: 0 5px;
+/*    width: 60px;*/
+    height: 20px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+
+/*Footer*/
+.footer-info {
+    margin-top: 40px;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 20px;
+}
+/*
+.footer-info .sign-up-container {
+    position: relative;
+}
+*/
+
+.footer-info .email-sign-up {
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.footer-info input[type=email] {
+    width: 320px;
+    margin: 0; 
+}
+.footer-info input[type=email]::-webkit-input-placeholder {
+    color: #B2B2B2;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+}
+
+.sign-up-container > i {
+    position: relative;
+    margin: 0;
+    left: -36px;
+}
+.footer-info ul li {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+.footer-info ul:first-of-type {
+    margin: 0;
+}
+.footer-info ul:nth-of-type(2) {
+/*    margin: 0;*/
+    width: 17.3333333333%; /*move the margin-left(4%) of first-of-type to this one*/
+}
+.footer-info ul li:first-of-type {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+footer .social {
+    line-height: 45px;
+}
+footer .social:after {
+    clear: both;
+}
+footer .social span {
+    float: left;
+}
+footer .social ul {
+    float: right;
+    margin: 0;
+}
+footer .social ul li{
+    display: inline;
+    margin-right: 20px;
+}
+footer .social ul li:last-of-type{
+    margin-right: 0;
 }
