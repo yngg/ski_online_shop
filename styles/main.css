@@ -316,6 +316,7 @@ ul.actions li:last-child {
     position: relative;
     float: right;
     margin-right: 20px;
+    opacity: 0;
 }
 .part.actions .play-icon {
     position: absolute;
@@ -324,6 +325,11 @@ ul.actions li:last-child {
     left: 0;
     right: 0;
     bottom: 0;
+    cursor: pointer;
+}
+.tutorial-clip ul li:hover .actions {
+    transition: 0.5s;
+    opacity: 1;
 }
 .vid-thumbnail {
     width: 110px;
@@ -357,6 +363,10 @@ ul.actions li:last-child {
     text-transform: capitalize;
     line-height: 18px;
     margin-bottom: 0;
+}
+.modal-content {
+    background: transparent !important;
+    border: none !important;
 }
 
 /*Footer*/
